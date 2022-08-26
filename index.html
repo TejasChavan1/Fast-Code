@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Unick1</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Technology</a></li>
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Write for us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="alert alert-danger" role="alert">
+        A simple primary alert—check it out!
+    </div>
+
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Success</strong> Youe form has been filled successful.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Blog</a></li>
+            <li class="breadcrumb-item"><a href="#">Tutorials</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Bootstrap in one blog
+                <span class="badge bg-success">New</span>
+            </li>
+        </ol>
+    </nav>
+
+    <button type="button" class="btn btn-primary btn-lg">Large button</button>
+    <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-outline-danger">Primary</button>
+
+    <button type="button" class="btn btn-primary btn-sm">Small button</button>
+    <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+
+    <button type="button" class="btn btn-primary"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+        Custom button
+    </button>
+
+    <button type="button" class="btn btn-primary" disabled>Primary button</button>
+    <button type="button" class="btn btn-secondary" disabled>Button</button>
+    <button type="button" class="btn btn-outline-primary" disabled>Primary button</button>
+    <button type="button" class="btn btn-outline-secondary" disabled>Button</button>
+
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+    </div>
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+    </div>
+
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group me-2" role="group" aria-label="First group">
+            <button type="button" class="btn btn-primary">1</button>
+            <button type="button" class="btn btn-primary">2</button>
+            <button type="button" class="btn btn-primary">3</button>
+            <button type="button" class="btn btn-primary">4</button>
+        </div>
+        <div class="btn-group me-2" role="group" aria-label="Second group">
+            <button type="button" class="btn btn-secondary">5</button>
+            <button type="button" class="btn btn-secondary">6</button>
+            <button type="button" class="btn btn-secondary">7</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Third group">
+            <button type="button" class="btn btn-info">8</button>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="https://picsum.photos/500/300?random=1" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    <div class="card text-center">
+        <div class="card-header">
+            Featured
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <div class="card-footer text-muted">
+            2 days ago
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://picsum.photos/500/300?random=2" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/500/300?random=3" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/500/300?random=4" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row bg-success">
+            <div class="col-md-10 col-sm-6 border">
+                1 of 2
+            </div>
+            <div class="col-md-2 col-sm-6 border">
+                2 of 2
+            </div>
+        </div>
+        <div class="row bg-warning">
+            <div class="col border">
+                1 of 3
+            </div>
+            <div class="col border">
+                2 of 3
+            </div>
+            <div class="col border">
+                3 of 3
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+          <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#item-1">Item 1</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+              </nav>
+              <a class="nav-link" href="#item-2">Item 2</a>
+              <a class="nav-link" href="#item-3">Item 3</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+      
+        <div class="col-8">
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+            <div id="item-1">
+              <h4>Item 1</h4>
+              <p>...</p>
+            </div>
+            <div id="item-1-1">
+              <h5>Item 1-1</h5>
+              <p>...</p>
+            </div>
+            <div id="item-1-2">
+              <h5>Item 1-2</h5>
+              <p>...</p>
+            </div>
+            <div id="item-2">
+              <h4>Item 2</h4>
+              <p>...</p>
+            </div>
+            <div id="item-3">
+              <h4>Item 3</h4>
+              <p>...</p>
+            </div>
+            <div id="item-3-1">
+              <h5>Item 3-1</h5>
+              <p>...</p>
+            </div>
+            <div id="item-3-2">
+              <h5>Item 3-2</h5>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+      </div>
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="bg-info clearfix">
+        <button type="button" class="btn btn-secondary float-start">Example Button floated left</button>
+        <button type="button" class="btn btn-secondary float-end">Example Button floated right</button>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
